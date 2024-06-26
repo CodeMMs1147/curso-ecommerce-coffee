@@ -1,0 +1,2 @@
+D:/codemms/curso-ecommerce-coffee/backend-ecommerce/node_modules
+D:/codemms/curso-ecommerce-coffee/frontend-ecommerce/node_modules
