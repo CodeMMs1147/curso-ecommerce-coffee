@@ -1,6 +1,9 @@
 "use client"
 import { Heart, ShoppingCart, User } from "lucide-react";
 import { useRouter } from "next/navigation";
+import MenuList from "./menu-list";
+import ItemsMenuMobile from "./items-menu-mobile";
+import ToggleTheme from "./toggle-theme";
 
 const Navbar = () => {
   
@@ -14,11 +17,11 @@ const Navbar = () => {
       </h1>
 
       <div className="items-center justify-between hidden sm:flex">
-        <p>Menu desktop</p>
+        <MenuList />
       </div>
 
       <div className="flex sm:hidden">
-        <p>Items menu mobile</p>
+        <ItemsMenuMobile />
       </div>
 
       <div className="flex items-center justify-between gap-2 sm:gap-7">
@@ -36,6 +39,8 @@ const Navbar = () => {
         />
 
         <User strokeWidth={1} className="cursor-pointer"/>
+
+        <ToggleTheme />
 
       </div>
 
