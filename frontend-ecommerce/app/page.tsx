@@ -7,6 +7,7 @@ export default function Home() {
       
       <CarouselTextBanner />
       <FeaturedProducts />
+      <BannerDoci
 
     </main>
   );
