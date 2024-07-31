@@ -8,9 +8,11 @@ const FilterOrigin = () => {
 
   return ( 
     <div className="my-5">
+      
       <p className="mb-3 font-bold">Origen</p>
+
       {loading && result == null && (
-        <p>Vargando origen...</p>
+        <p>Cargando origen...</p>
       )}
 
       <RadioGroup>

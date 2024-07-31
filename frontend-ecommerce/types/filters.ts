@@ -1,10 +1,10 @@
 export type FilterTypes = {
-  result: ResultFiltersType | null,
+  result: ResultFilterTypes | null;
   loading:   boolean,
   error: string
 }
 
-export type ResultFiltersType = {
+export type ResultFilterTypes = {
   schema: {
     attributes: {
       origin: {
