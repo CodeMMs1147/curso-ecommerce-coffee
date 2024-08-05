@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import IconButton from "@/components/icon-button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { formatPrice } from "@/lib/formatPrice";
 import { ProductType } from "@/types/product";
 import { Expand, ShoppingCart } from "lucide-react";
 import Link from "next/link";
@@ -66,7 +67,7 @@ const ProductCard = (props: ProductCardProps) => {
         </CarouselContent>
 
         <p className="text-2xl text-center">{product.attributes.productName}</p>
-        <p className="font-bold text-center">{product.attributes.price}</p>
+        <p className="font-bold text-center">{formatPrice(product.attributes.price)}</p>
 
       </Carousel>
     </Link>
