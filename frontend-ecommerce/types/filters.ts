@@ -9,6 +9,9 @@ export type ResultFilterTypes = {
     attributes: {
       origin: {
         enum: any,
+      },
+      taste: {
+        enum: any,
       }
     }
   }

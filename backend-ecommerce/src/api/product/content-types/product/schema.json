@@ -52,8 +52,9 @@
     "taste": {
       "type": "enumeration",
       "enum": [
-        "sweet",
-        "citric"
+        "dulce",
+        "citrico",
+        "amargo"
       ]
     },
     "isFeatured": {

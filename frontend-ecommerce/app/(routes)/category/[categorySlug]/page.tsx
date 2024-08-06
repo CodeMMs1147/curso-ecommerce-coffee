@@ -21,11 +21,11 @@ export default function Page() {
   const [filterOrigin, setfilterOrigin] = useState('')
   const [filterTaste, setfilterTaste] = useState('')
 
-  const filteredProducts =  result != null && !loading && (
-    filterOrigin === '' 
-    ? result 
-    : result.filter((product: ProductType) => 
-      product.attributes.origin === filterOrigin)
+  const filteredProducts = result != null && !loading && (
+    result.filter((product: ProductType) =>
+    (filterTaste === '' || product.attributes.taste === filterTaste) &&
+    (filterOrigin === '' || product.attributes.origin === filterOrigin)
+    )
   )
 
   // console.log('estos son los productos filtrados: ', filteredProducts)
@@ -38,7 +38,7 @@ export default function Page() {
       <Separator />
 
       <div className="sm:flex sm:justify-between">
-        <FiltersControlCategory setFilterOrigin={setfilterOrigin}/>
+        <FiltersControlCategory setFilterOrigin={setfilterOrigin} setFilterTaste={setfilterTaste}/>
 
         <div className="grid gap-5 mt-8 sm:grid-cols-3 md:gap-10">
           {loading && (

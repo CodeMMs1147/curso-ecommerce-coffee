@@ -413,7 +413,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     active: Attribute.Boolean & Attribute.DefaultTo<true>;
     price: Attribute.Decimal;
     origin: Attribute.Enumeration<['Africa', 'Asia', 'America', 'Europe']>;
-    taste: Attribute.Enumeration<['sweet', 'citric']>;
+    taste: Attribute.Enumeration<['dulce', 'citrico', 'amargo']>;
     isFeatured: Attribute.Boolean;
     category: Attribute.Relation<
       'api::product.product',
