@@ -15,9 +15,7 @@ import { useCart } from "@/hooks/use-cart";
 const FeaturedProducts = () => {
   const router = useRouter()
   const {loading, result}: ResponseType = useGetFeaturedProducts();
-  const {addItem, items} = useCart()
-
-  console.log('los items: ',items)
+  const {addItem} = useCart()
 
   return ( 
     <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
